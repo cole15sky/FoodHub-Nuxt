@@ -12,7 +12,7 @@
                     <NuxtLink class="hover:underline me-4 md:me-6" to="/">Home</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink class="hover:underline me-4 md:me-6" to="/categories">Categories </NuxtLink>
+                    <NuxtLink class="hover:underline me-4 md:me-6" to="/menu">Menu </NuxtLink>
                 </li>
                 <li>
                     <NuxtLink class="hover:underline me-4 md:me-6" to="/orders">Orders </NuxtLink>
