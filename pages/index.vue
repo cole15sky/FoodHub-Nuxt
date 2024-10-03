@@ -36,11 +36,23 @@
                     <Icon name="fluent-emoji-high-contrast:articulated-lorry" style="font-size: 3rem;" />
                     <h2 class="text-xl font-bold">Free Delivery</h2>
                     <p> Free delivery services are available only inside the valley</p>
+                    <br> <br> 
                 </div>
             </div>
         </div>
+        <br><br><br>
+
+
+
+
+        <div class="flex flex-col items-center mt-8">
+            <p class="text-5xl">Words from our team.</p>
+            <br>
+        </div>
 
         <div>
+            <TeamWords/>
+
             <Footer/>
 
         </div>
