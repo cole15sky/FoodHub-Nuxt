@@ -10,7 +10,35 @@
                     class="object-fit w-full h-104" alt="">
             </div>
         </div>
-        
-       
+        <div class="flex flex-col items-center mt-8">
+            <h1 class="text-2xl">Our Services.</h1>
+            <p class="text-5xl">How Good we are.</p>
+        </div>
+
+        <div class="flex justify-center mt-8">
+            <div class="grid grid-cols-1 grid-cols-3 gap-6 w-full max-w-5xl">
+                <div class=" bg-sky-500 p-4 bg-white rounded shadow-md text-center">
+                    <Icon name="icon-park-solid:bank-card" style="font-size: 3rem;" />
+
+                    <h2 class="text-xl font-bold">Accept Card</h2>
+                    <p> We accept cards also but only on delivery of foods.</p>
+
+
+                </div>
+                <div class=" bg-sky-500 p-4 bg-white rounded shadow-md text-center">
+                    <Icon name="ic:baseline-location-on" style="font-size: 3rem;" />
+
+                    <h2 class="text-xl font-bold">Accessible</h2>
+                    <p>We also accept the order on the food you want.</p>
+
+                </div>
+                <div class=" bg-sky-500 p-4 bg-white rounded shadow-md text-center">
+                    <Icon name="fluent-emoji-high-contrast:articulated-lorry" style="font-size: 3rem;" />
+                    <h2 class="text-xl font-bold">Free Delivery</h2>
+                    <p> Free delivery services are available only inside the valley</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </template>
