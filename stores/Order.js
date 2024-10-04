@@ -1,4 +1,3 @@
-// stores/Order.js
 import { defineStore } from 'pinia';
 
 export const useOrderStore = defineStore('order', {
