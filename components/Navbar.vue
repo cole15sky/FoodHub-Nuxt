@@ -15,8 +15,8 @@
         </div>
 
         <!-- Sign In Button -->
-        <button type="button" class="ml-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
-          Sign In
+        <button type="button" class="ml-4 bg-yellow-700 text-white px-4 py-2 rounded-lg hover:bg-yellow-500">
+          <NuxtLink to="/signin"> Sign In </NuxtLink>
         </button>
 
         <!-- Mobile Menu Button -->
