@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <Navbar />
@@ -9,12 +8,15 @@
           <p class="text-lg">Your cart is empty.</p>
         </div>
         <div v-else>
-          <div v-for="item in items" :key="item.id" class="flex justify-between p-4 bg-white rounded shadow-md mb-4">
+          <div v-for="item in items" :key="item.id" class="flex justify-between items-center p-4 bg-white rounded shadow-md mb-4">
             <div>
               <p>{{ item.name }} - {{ item.quantity }} x {{ item.price }}$</p>
             </div>
-            <div>
-              <strong>{{ item.quantity * item.price }}$</strong>
+            <div class="flex items-center">
+              <button @click="decreaseQuantity(item)" class="bg-red-500 text-white px-2 rounded">-</button>
+              <span class="mx-2">{{ item.quantity }}</span>
+              <button @click="increaseQuantity(item)" class="bg-green-500 text-white px-2 rounded">+</button>
+              <strong class="ml-4">{{ item.quantity * item.price }}$</strong>
             </div>
           </div>
           <div class="flex justify-between font-bold mt-4">
@@ -35,4 +37,15 @@ const orderStore = useOrderStore();
 const items = orderStore.items;
 const totalPrice = orderStore.totalPrice;
 
+const increaseQuantity = (item) => {
+  orderStore.updateQuantity(item.id, item.quantity + 1);
+};
+
+const decreaseQuantity = (item) => {
+  if (item.quantity > 1) {
+    orderStore.updateQuantity(item.id, item.quantity - 1);
+  } else {
+    orderStore.removeItem(item.id);
+  }
+};
 </script>
