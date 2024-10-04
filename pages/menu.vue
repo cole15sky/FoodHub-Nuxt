@@ -26,6 +26,8 @@
 
 <script setup>
 
+import { useOrderStore } from '~/stores/Order';
+
 // Define menu items as an array of objects
 const menuItems = [
   { id: 1, name: 'Chrispy Chicken Burger', price: 47, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI7C7njKUUt7Gf8tVBBocikQHF0Pv1BANiQA&s' },
@@ -41,5 +43,12 @@ const menuItems = [
   { id: 11, name: 'Japanese Sushi', price: 43.5, image: 'https://t3.ftcdn.net/jpg/06/35/90/18/360_F_635901844_WGA5JzN6H5AE8tDBMrSgkeEsYn3wzacH.jpg' },
   { id: 12, name: 'Spanish Noodles', price: 23, image: 'https://florafoods.com/wp-content/uploads/AdobeStock_224044706-1-scaled.jpeg' },
 ];
+
+
+const orderStore = useOrderStore();
+
+function addToCart(item) {
+  orderStore.addItem({ id: item.id, name: item.name, price: item.price });
+}
 
 </script>
