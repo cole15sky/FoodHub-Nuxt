@@ -2,7 +2,7 @@
   <div>
     <Navbar />
     <div class="flex justify-center mt-8 ">
-      <div class="grid grid-cols-1 grid-cols-4 gap-6 w-full max-w-8xl bg-gray-200">
+      <div class="grid  grid-cols-4 gap-6 w-full max-w-8xl bg-gray-200">
         <div
           v-for="item in menuItems"
           :key="item.id"
