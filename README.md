@@ -1,75 +1,72 @@
-# Nuxt 3 Minimal Starter
+# FoodHub
+ ### Online Food Booking Site
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project highlights about "Online Food Booking Site!"  This web application allows users to browse and order food from restaurants, providing a seamless and intuitive user experience.
 
-## Setup
+## Table of Contents
 
-Make sure to install the dependencies:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-```bash
-# npm
+## Features
+
+- User-friendly interface to browse food items.
+- Responsive design for mobile and desktop users.
+- Ability to view detailed information about each food item.
+- Cart functionality to manage selected items and checkout.
+- User authentication for a personalized experience.
+- Stylish hover effects using Tailwind CSS.
+
+## Technologies Used
+
+- [Nuxt.js](https://nuxtjs.org/) - A framework for building Vue.js applications.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for designing custom user interfaces.
+- [Vue.js](https://vuejs.org/) - The progressive JavaScript framework.
+- [Pinia](https://pinia.vuejs.org/) - A state management library for Vue.js applications.
+
+## Installation
+
+To get started with the project, clone the repository and install the dependencies:
+
+
+# Clone the repository
+git clone https://github.com/cole15sky/FoodHub-Nuxt.git
+
+# Navigate to the project directory
+cd Nuxt-Project
+
+# Install dependencies
 npm install
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
+### Sample snapshots of the project.
 
-# bun
-bun install
-```
+<img width="1440" alt="Screenshot 2024-10-04 at 16 35 30" src="https://github.com/user-attachments/assets/94850b75-749b-4d3d-87fa-d61c787add25">
 
-## Development Server
 
-Start the development server on `http://localhost:3000`:
 
-```bash
-# npm
-npm run dev
+<img width="1440" alt="Screenshot 2024-10-04 at 16 35 42" src="https://github.com/user-attachments/assets/2ed14f3c-245f-4491-b6c5-975dbf91aedc">
 
-# pnpm
-pnpm run dev
 
-# yarn
-yarn dev
 
-# bun
-bun run dev
-```
+<img width="1440" alt="Screenshot 2024-10-04 at 16 36 02" src="https://github.com/user-attachments/assets/83bddac9-ffd7-4f1d-914e-e7024d14a425">
 
-## Production
 
-Build the application for production:
 
-```bash
-# npm
-npm run build
+<img width="1440" alt="Screenshot 2024-10-04 at 16 35 47" src="https://github.com/user-attachments/assets/9a1730d7-7e09-4572-80c0-98bb2e5e76f8">
 
-# pnpm
-pnpm run build
 
-# yarn
-yarn build
 
-# bun
-bun run build
-```
+<img width="1440" alt="Screenshot 2024-10-04 at 16 42 08" src="https://github.com/user-attachments/assets/25ae5dfc-f31d-4acf-8942-06e21dd8f12d">
 
-Locally preview production build:
 
-```bash
-# npm
-npm run preview
 
-# pnpm
-pnpm run preview
+<img width="1440" alt="Screenshot 2024-10-04 at 16 36 24" src="https://github.com/user-attachments/assets/ee9ba40e-e3d8-48fd-8550-662be014e658">
 
-# yarn
-yarn preview
 
-# bun
-bun run preview
-```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
