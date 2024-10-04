@@ -7,6 +7,10 @@
             <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">FoodHub</span>
             </a>
+            <div class="flex flex-col items-center mt-8">
+            <p class="text-3xl text-white"> 414 Columbus Ave, San Francisco, CA 94133, United States</p>
+            <h3 class="text-2xl text-white"> Open everyday from 9:00am-11:00pm</h3>
+        </div>
             <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
                     <NuxtLink class="hover:underline me-4 md:me-6" to="/">Home</NuxtLink>
