@@ -1,7 +1,4 @@
 <template>
-<div>
-    <NuxtLayout name="navbar"/>
-</div>
     <div class="h-full flex flex-col">
         <div class="flex w-full">
             <div class="w-full" data-carousel-item>
@@ -102,6 +99,5 @@
         <div>
             <TeamWords />
         </div>
-        <NuxtLayout name="footer"/>
     </div>
 </template>

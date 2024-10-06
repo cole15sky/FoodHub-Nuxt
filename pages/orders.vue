@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2 class="text-center text-3xl mt-8">Order Summary</h2>
-    <div class="flex justify-center mt-8">
+    <h2 class="text-center  text-3xl mt-8">Order Summary</h2>
+    <div class="flex justify-center mt-8 min-h-screen">
       <div class="w-full max-w-8xl bg-gray-200 p-6 rounded-lg shadow-md">
         <div v-if="items.length === 0" class="text-center">
           <p class="text-lg">Your cart is empty.</p>
@@ -30,6 +30,11 @@
 </template>
 
 <script setup>
+
+// definePageMeta({
+//   layout: false
+// });
+
 import { useOrderStore } from '~/stores/Order';
 
 const orderStore = useOrderStore();
