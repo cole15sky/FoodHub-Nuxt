@@ -1,5 +1,6 @@
 <template>
-  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">FoodHub</span>
       
@@ -14,12 +15,10 @@
           <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
         </div>
 
-        <!-- Sign In Button -->
         <button type="button" class="ml-4 bg-yellow-700 text-white px-4 py-2 rounded-lg hover:bg-yellow-500">
           <NuxtLink to="/signin"> Sign In </NuxtLink>
         </button>
 
-        <!-- Mobile Menu Button -->
         <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -52,10 +51,37 @@
       </div>
     </div>
   </nav>
+  <div>
+    <slot></slot>
+    <div>
+
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 ">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">FoodHub</span>
+            </a>
+            <div class="flex flex-col items-center mt-8">
+            <p class="text-3xl text-white"> 414 Columbus Ave, San Francisco, CA 94133, United States</p>
+            <h3 class="text-2xl text-white"> Open everyday from 9:00am-11:00pm</h3>
+        </div>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <NuxtLink class="hover:underline me-4 md:me-6" to="/">Home</NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink class="hover:underline me-4 md:me-6" to="/menu">Menu </NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink class="hover:underline me-4 md:me-6" to="/orders">Orders </NuxtLink>
+                </li>
+             
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 All Rights Reserved.</span>
+    </div>
+</footer>
+    </div>
+  </div>
 </template>
-
-<script setup>
-</script>
-
-<style scoped>
-</style>

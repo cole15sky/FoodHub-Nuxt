@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar />
     <h2 class="text-center text-3xl mt-8">Order Summary</h2>
     <div class="flex justify-center mt-8">
       <div class="w-full max-w-8xl bg-gray-200 p-6 rounded-lg shadow-md">
@@ -8,7 +7,8 @@
           <p class="text-lg">Your cart is empty.</p>
         </div>
         <div v-else>
-          <div v-for="item in items" :key="item.id" class="flex justify-between items-center p-4 bg-white rounded shadow-md mb-4">
+          <div v-for="item in items" :key="item.id"
+            class="flex justify-between items-center p-4 bg-white rounded shadow-md mb-4">
             <div>
               <p>{{ item.name }} - {{ item.quantity }} x {{ item.price }}$</p>
             </div>

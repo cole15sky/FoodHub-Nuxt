@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     
 
 <footer class="bg-white rounded-lg shadow dark:bg-gray-900 ">
@@ -30,4 +30,4 @@
 </footer>
 
 
-</template>
+</template> -->

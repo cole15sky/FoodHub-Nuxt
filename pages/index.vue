@@ -1,9 +1,5 @@
 <template>
     <div class="h-full flex flex-col">
-        <div>
-            <Navbar />
-        </div>
-
         <div class="flex w-full">
             <div class="w-full" data-carousel-item>
                 <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/delicious-pizza-banner-design-template-678ba6314fa1113b55bde00ccfb38bcc_screen.jpg?ts=1665562063"
@@ -91,28 +87,17 @@
                         </h1>
                         <p class="text-gray-600">Enjoy our vibrant Pasta Primavera, featuring fresh zucchini, bell
                             peppers, and cherry tomatoes, tossed in a light garlic and olive oil sauce. </p>
-
                     </div>
                 </div>
-
-
             </div>
         </div>
-
-
-
         <br>
         <div class="flex flex-col items-center mt-8">
             <p class="text-5xl">Words from our team.</p>
             <br>
         </div>
-
         <div>
             <TeamWords />
-
-            <Footer />
-
         </div>
-
     </div>
 </template>
