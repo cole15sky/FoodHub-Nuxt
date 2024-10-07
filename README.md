@@ -46,7 +46,7 @@ npm install
 
 ### Sample snapshots of the project.
 
-<img width="1440" alt="Screenshot 2024-10-04 at 16 35 30" src="https://github.com/user-attachments/assets/94850b75-749b-4d3d-87fa-d61c787add25">
+<img width="1440" alt="Screenshot 2024-10-07 at 15 12 08" src="https://github.com/user-attachments/assets/b19ca294-3cf0-4232-9846-6c8068c0e9ff">
 
 
 
