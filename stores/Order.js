@@ -1,4 +1,8 @@
-import { defineStore } from 'pinia';
+import { defineStore, createPinia } from 'pinia';
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
+
+const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
 
 export const useOrderStore = defineStore('order', {
   state: () => ({
@@ -8,15 +12,12 @@ export const useOrderStore = defineStore('order', {
   }),
   actions: {
     addItem(item) {
-      // Check if item already exists
       const existingItem = this.items.find(i => i.id === item.id);
       if (existingItem) {
         existingItem.quantity++;
       } else {
-        // Add new item with initial quantity
         this.items.push({ ...item, quantity: 1 });
       }
-      // Update totals
       this.updateTotals();
     },
     updateQuantity(id, quantity) {
@@ -43,4 +44,5 @@ export const useOrderStore = defineStore('order', {
       this.updateTotals();
     },
   },
+  persist: true,
 });

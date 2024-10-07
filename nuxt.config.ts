@@ -6,7 +6,9 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/icon',
     '@nuxt/image',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    'pinia-plugin-persistedstate/nuxt'
+    
   ],
   devtools: { enabled: true }
 })
