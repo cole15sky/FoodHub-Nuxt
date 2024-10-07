@@ -34,7 +34,7 @@
                 <button type="button" class="bg-yellow-700 text-white px-4 py-2 rounded-lg hover:bg-yellow-500">
                     <NuxtLink to="/signin">Sign In</NuxtLink>
                 </button>
-
+                <NuxtLink to="/orders">
                     <svg width="64px" height="64px" viewBox="-276.48 -276.48 1576.96 1576.96" class="icon ms-4" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)" stroke="#000000" stroke-width="9.216">
                     <g id="SVGRepo_bgCarrier" stroke-width="0">
                         <rect x="-276.48" y="-276.48" width="1576.96" height="1576.96" rx="788.48" fill="#ced7da" strokewidth="0"></rect>
@@ -46,6 +46,7 @@
                         <path d="M276.3 401l3.4 16-3.4-16z" fill="#343535"></path>
                     </g>
                 </svg>
+                </NuxtLink>
             </div>
             
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
