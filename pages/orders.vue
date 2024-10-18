@@ -31,10 +31,6 @@
 
 <script setup>
 
-// definePageMeta({
-//   layout: false
-// });
-
 import { useOrderStore } from '~/stores/Order';
 
 const orderStore = useOrderStore();
